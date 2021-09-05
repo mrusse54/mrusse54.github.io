@@ -5,7 +5,47 @@ body
 
     font-family: 'Creepster', cursive;
     color:rebeccapurple;
-    font-size: 30;
+    margin-left: 75px;
+	margin-right: 75px;
     background-color: chartreuse;
+    font-size: 20px;
 }
+
+header, footer
+{
+	text-align: center;
+}
+
+nav
+{
+	text-align: center;
+}
+
+h1, h2, h3
+{
+	text-align: center;
+	line-height: 0px;
+}
+
+figure
+{
+	text-align: center;
+}
+
+a:hover
+{
+text-decoration: underline;
+color: plum;    
+}
+
+
+
+img {
+    max-width: 500px; 
+    max-height: 500px;
+    border: rebeccapurple;
+    border-width: 5px;
+    border-style: solid;
+  }
+  
 
