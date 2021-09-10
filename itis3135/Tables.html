@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+     <link href="styles/HTML_Tables.css" rel="stylesheet" type="text/css" >
+     <title>Mitchell Russell, ITIS3135-051-13709, HTML Tables Page</title>
+</head>
+
+<body>
+    <header>
+            <h1>
+                Mitchell Russell's ITIS3135: HTML Tables
+            </h1>
+    </header>
+
+    <nav>
+		<a href="introduction.html">Introduction</a> 
+        ||
+		<a href="introduction.html">Contract</a> 
+	</nav>	
+    
+    <main>
+        <h2> HTML Tables </h2>
+        <h3>My tabular Data</h3>
+        <ol>
+            <li>James Smith JSmith@yahoo.com 50</li>
+            <li>Maria Garcia Garcia1986@gmail.com 7</li>
+            <li>James Johnson jjohn54@uncc.edu 10</li>
+            <li>John Michael MJ@gmail.com 34</li>
+            <li>William Joseph itisWill@hotmail.com 23</li>
+            <li>Daniel Kenneth dkenne79@uncc.edu 27</li>
+            <li>Timothy Walker TimWalker@Walker.co 11</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+               <th>Name</th> 
+               <th>Email</th>
+               <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>James Smith</td>
+                <td>JSmith@yahoo.com</td>
+                <td>50</td>
+
+            </tr>
+            <tr>
+                <td>Maria Garcia</td>
+                <td>Garcia1986@gmail.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>James Johnson</td>
+                <td>jjohn54@uncc.edu</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>John Michael</td>
+                <td>MJ@gmail.com</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>William Joseph</td>
+                <td>itisWill@hotmail.com</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Daniel Kenneth</td>
+                <td>dkenne79@uncc.edu</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Timothy Walker11</td>
+                <td>TimWalker@Walker.co</td>
+                <td>11</td>
+            </tr>
+        </table>
+
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure >
+            <table>
+                <tr>
+                    <th >Job Categories</th>
+                    <th>Name</th> 
+                    <th>Email</th>
+                    <th class="right">Years of Service</th>
+                    <th class="right">Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2" headers = "Job Categorie">Mechanical Engineer</td>
+                    <td headers="Name" >James Smith</td>
+                    <td headers="Email">JSmith@yahoo.com</td>
+                    <td class="right" headers="Years of Service">50</td>
+                    <td class="right" headers="Monthly Salary">$6,500</td>
+                </tr>
+                <tr>
+                    <td headers="Name">Maria Garcia</td>
+                    <td headers="Email">Garcia1986@gmail.com</td>
+                    <td class="right" headers="Years of Service">7</td>
+                    <td class="right" headers="Monthly Salary">$6,500</td>
+                </tr>
+                <tr>
+                    <td headers = "Job Categorie">Plant Safety Manager</td>
+                    <td headers="Name">Daniel Kenneth</td>
+                    <td headers="Email">dkenne79@uncc.edu</td>
+                    <td class="right" headers="Years of Service">27</td>
+                    <td class="right" headers="Monthly Salary">$9,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" headers = "Job Categorie">Truck Driver</td>
+                    <td headers="Name">James Johnson</td>
+                    <td headers="Email">jjohn54@uncc.edu</td>
+                    <td class="right" headers="Years of Service">10</td>
+                    <td class="right" headers="Monthly Salary">$4,000</td>
+                </tr>
+                <tr>
+                    <td headers="Name" >John Michael</td>
+                    <td headers="Email">MJ@gmail.com</td>
+                    <td class="right" headers="Years of Service">34</td>
+                    <td class="right" headers="Monthly Salary">$4,000</td>
+                </tr>
+                <tr>
+                    <td headers="Name">William Joseph</td>
+                    <td headers="Email">itisWill@hotmail.com</td>
+                    <td class="right" headers="Years of Service">23</td>
+                    <td class="right" headers="Monthly Salary">$4,000</td>
+                </tr>
+                <tr>
+                    <td headers = "Job Categorie">Plant Manager</td>
+                    <td headers="Name">Timothy Walker11</td>
+                    <td headers="Email">TimWalker@Walker.co</td>
+                    <td class="right" headers="Years of Service">11</td>
+                    <td class="right" headers="Monthly Salary">$10,000</td>
+                </tr>
+                <th colspan="3" id="tys" headers="Total Years of Service">Total Years of Service</th>
+                <th colspan="1" class="right" headers="Total Years of Service Sum">112</th>
+                <th colspan="1" class="right" headers="Total Monthly Pay Sum">$44,000</th>
+            </table>
+            <figcaption>Employee information.</figcaption>
+        </figure>
+        
+        
+    </main>
+
+    <footer>
+    <br> 
+        <nav>
+            <!-- &#9553 creates the || formatting -->
+            <a href="https://webpages.uncc.edu/mrusse54/" target="_blank">My Charlotte.edu</a> &#9553;
+            <a href="https://github.com/mrusse54" target="_blank">Github</a> &#9553;
+            <a href="https://github.com/mrusse54/mrusse54.github.io" target="_blank">Github.io</a> &#9553;
+            <a href="https://github.com/mrusse54/mrusse54.github.io/tree/main/itis3135" target="_blank">ITIS 3135 Github Pages</a> &#9553;
+            <a href="https://www.linkedin.com/in/mrusse54/" target="_blank">LinkedIn</a> &#9553;
+            
+        </nav>
+        <p>Page built by: MR Designs</p>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmrusse54%2Fitis3135%2Fintroduction.html" target="_blank">
+			<img src="images/button-valid-html5.gif" width="70" height="31" alt="Link to HTML validator">
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmrusse54%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+			<img src="images/button-valid-css.gif" width="70" height="31" alt="Link to CSS validator">
+		</a>
+    </footer>
+
+</body>
+
+</html>
