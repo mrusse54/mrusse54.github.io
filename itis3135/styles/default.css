@@ -48,6 +48,11 @@ img {
     border-width: 5px;
     border-style: solid;
   }
+  
+
+  h2{
+    padding-bottom: 5px;
+}
 
 .data
 {
@@ -126,6 +131,12 @@ tbody tr:nth-child(odd) td
     border: none;
 }
 
+form
+{
+    display: block;
+    line-break:auto;
+}
+
 .ratings{
     border: none;
     margin-top: 2px;
@@ -144,3 +155,11 @@ tbody tr:nth-child(odd) td
     text-align: left;
 }
 
+#submit {
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
+    color: chartreuse;
+    background-color: black;
+
+    
+}

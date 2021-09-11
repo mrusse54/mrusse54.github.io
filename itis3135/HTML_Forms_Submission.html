@@ -76,6 +76,7 @@
 
             <h2 class="shopSection">Newsletter Sign Up</h2>
             <p>Please enter the following information to receive our newsletter and coupons.</p>
+
             <form action="#">
 
                 <fieldset class="recommendation">
@@ -86,15 +87,10 @@
                 <input type="email" id="email" name="email" placeholder="abc@email.com" size="17" required>
                 <label for="phoneNumber">Phone Number:</label>
                 <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890" size="13" required>
-                </fieldset>     
-                <fieldset class="recommendation">
-                    <legend>on a scale from 1-4 would you recommend JavaJam to your friends?</legend>
-                    <select name="recommend" id="recommend" required>
-                        <option value="4">4</option>
-                        <option value="3">3</option>
-                        <option value="2">2</option>
-                        <option value="1">1</option>
-                </fieldset>
+            </fieldset>   
+         
+            </fieldset>
+                
                 <fieldset class="checkboxes">
                     <legend>What did you order from the menu?</legend>
                 <label for="checkbox1">Select all that apply: Just Java</label>
@@ -104,16 +100,30 @@
                 <label for="checkbox3">Iced Cappuccino</label>
                 <input type="checkbox" id="checkbox3" name="order" required>
                 </fieldset>
+
                 <fieldset class="ratings">
                     <legend>How was your dining experience?</legend>
-                <label for="rating1">1 Star:</label>
+                <label for="rating1">1 Star</label>
                 <input type="radio" id="rating1" name="rating" required>
-                <label for="rating2">2 Star:</label>
+                <label for="rating2">2 Star</label>
                 <input type="radio" id="rating2" name="rating" required>
-                <label for="rating3">3 Star:</label>
+                <label for="rating3">3 Star</label>
                 <input type="radio" id="rating3" name="rating" required>
                 </fieldset>
-                <button type="submit">Submit form</button>
+    
+                <fieldset class="recommendation">
+                    <legend>on a scale from 1-4 would you recommend JavaJam to your friends?</legend>
+                    <label for="recommend">Select one of the following numbers:</label>
+                    <select name="recommend" id="recommend" required>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </fieldset>
+
+                <label for="submit">Press submit after completing the form</label>
+                <button type="submit" id="submit"> Submit</button>
             </form>
 
 		</main>
