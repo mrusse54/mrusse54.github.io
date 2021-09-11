@@ -48,11 +48,6 @@ img {
     border-width: 5px;
     border-style: solid;
   }
-  
-
-  h2{
-    padding-bottom: 5px;
-}
 
 .data
 {
@@ -131,19 +126,21 @@ tbody tr:nth-child(odd) td
     border: none;
 }
 
-form
-{
-    display: block;
-}
-
 .ratings{
     border: none;
-    margin-top: 10px;
+    margin-top: 2px;
     text-align: left;
 }
 
 .checkboxes{
     border: none;
-    margin-top: 10px;
+    margin-top: 2px;
     text-align: left;
 }
+
+.recommendation{
+    border: none;
+    margin-top: 2px;
+    text-align: left;
+}
+

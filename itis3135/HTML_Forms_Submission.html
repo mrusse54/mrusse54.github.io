@@ -77,13 +77,24 @@
             <h2 class="shopSection">Newsletter Sign Up</h2>
             <p>Please enter the following information to receive our newsletter and coupons.</p>
             <form action="#">
+
+                <fieldset class="recommendation">
+                    <legend>Please enter your name, email, and phone number.</legend>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="First-name Last-name" size="15" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="abc@email.com" size="17" required>
                 <label for="phoneNumber">Phone Number:</label>
                 <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890" size="13" required>
-                <br>
+                </fieldset>     
+                <fieldset class="recommendation">
+                    <legend>on a scale from 1-4 would you recommend JavaJam to your friends?</legend>
+                    <select name="recommend" id="recommend" required>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                </fieldset>
                 <fieldset class="checkboxes">
                     <legend>What did you order from the menu?</legend>
                 <label for="checkbox1">Select all that apply: Just Java</label>
@@ -112,7 +123,6 @@
     <footer>
         <p>Copyright © JavaJam Coffee House</p>
             <p>manager@javajam.com</p>
-    <br> 
         <nav>
             <!-- &#9553 creates the || formatting -->
             <a href="https://webpages.uncc.edu/mrusse54/" target="_blank">My Charlotte.edu</a> &#9553;
