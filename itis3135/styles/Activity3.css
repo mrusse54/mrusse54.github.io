@@ -1,65 +1,50 @@
-/*ITIS 3135 Activity 3 css file*/
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
-/*styling for the whole page goes here*/
+body
+{
 
-nav{
+    font-family: 'Creepster', cursive;
+    color:rebeccapurple;
+    margin-left: 75px;
+	margin-right: 75px;
+    background-color: chartreuse;
+    font-size: 20px;
+}
+
+header, footer
+{
 	text-align: center;
 }
 
-a{
-	color: #680000 ;
-}
-
-a:hover{
-	color: #996600;
-}
-
-body {
-	font-size: 16px;
-    background-color: #eeeeee;
-	color: #680000;
-}
-
-/*styling for the page title*/
-h1 {
-	font-style: italic;
-	font-size: 28px;
-    text-align: center;
-    background-color: #996600;
-	color: #f8f8f8;
-}
-
-/*styling for the overall table*/
-table {
-    background-color: #F8F8F8;
-	border: solid 2px #787878;
-}
-
-/*styling for the title of the table*/
-th {
-    font-weight: bold;
-    text-align: left;
-}
-
-/*styling for the coffee types*/
-.label {
-    font-weight: bold;
-}
-
-/*styling for the tables*/
-.altrow {
-	background-color: #E0E0E0;
-}
-
-/*styling for the Google Map link*/
-#locationlink {
-	color: #380000;
-	font-style:italic;
-}
-
-/*styling for the bottom copyright information*/
-footer {
-    font-style: italic;
-	font-size: 12px;
+nav
+{
 	text-align: center;
 }
+
+h1, h2, h3
+{
+	text-align: center;
+	line-height: 0px;
+}
+
+figure
+{
+	text-align: center;
+}
+
+a:hover
+{
+text-decoration: underline;
+color: plum;    
+}
+
+
+
+img {
+    max-width: 500px; 
+    max-height: 500px;
+    border: rebeccapurple;
+    border-width: 5px;
+    border-style: solid;
+  }
+  

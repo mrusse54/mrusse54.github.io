@@ -21,6 +21,7 @@ nav
 	text-align: center;
 }
 
+
 h1, h2, h3
 {
 	text-align: center;
@@ -49,3 +50,100 @@ img {
   }
   
 
+  h2{
+    padding-bottom: 5px;
+}
+
+.data
+{
+    text-align: center;
+    list-style: inside;
+}
+
+table
+{
+    border-collapse: collapse;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    background-color: rgb(255, 255, 255);
+}
+
+th{
+background-color: black;
+}
+
+th, td
+{
+	border: 3px solid rgb(80, 80, 80);
+	padding: 10px;
+	text-align: left;  
+}
+
+tbody tr:nth-child(odd) td
+{
+	background-color: rgb(0, 0, 0);
+}
+
+#tys
+{
+    padding-left: 200px;
+}
+
+.right
+{
+    text-align: right;
+}
+
+#locationlink
+ { 
+    color:rebeccapurple;
+    font-style:italic;
+}
+
+.label 
+{    
+    font-weight: bold;
+}
+
+.shopSection
+{
+    text-align: left;
+}
+.shopSection
+{
+    text-align: left;
+}
+
+#Menu
+{
+    margin-left: initial;
+    margin-right: initial;
+    border:solid 3px rebeccapurple;
+}
+
+.columnFormat
+{
+    border: none;
+}
+
+form
+{
+    display: block;
+}
+
+.ratings{
+    border: none;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.checkboxes{
+    border: none;
+    margin-top: 10px;
+    text-align: left;
+}

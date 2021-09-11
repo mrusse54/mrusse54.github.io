@@ -27,17 +27,6 @@ h1, h2, h3
 	line-height: 0px;
 }
 
-h2{
-    padding-bottom: 5px;
-}
-
-
-ol, li
-{
-    text-align: center;
-    list-style: inside;
-}
-
 figure
 {
 	text-align: center;
@@ -47,6 +36,27 @@ a:hover
 {
 text-decoration: underline;
 color: plum;    
+}
+
+
+
+img {
+    max-width: 500px; 
+    max-height: 500px;
+    border: rebeccapurple;
+    border-width: 5px;
+    border-style: solid;
+  }
+  
+
+h2{
+    padding-bottom: 5px;
+}
+
+ol, li
+{
+    text-align: center;
+    list-style: inside;
 }
 
 table
