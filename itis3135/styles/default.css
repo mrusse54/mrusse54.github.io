@@ -28,6 +28,10 @@ h1, h2, h3
 	line-height: 0px;
 }
 
+.headings{
+    text-align: initial;
+}
+
 figure
 {
 	text-align: center;
@@ -114,10 +118,6 @@ tbody tr:nth-child(odd) td
 {
     text-align: left;
 }
-.shopSection
-{
-    text-align: left;
-}
 
 #Menu
 {
@@ -160,4 +160,17 @@ form
     border-radius: 5px;
     color: chartreuse;
     background-color: black;
+}
+
+.lispacing{
+padding: 2px;
+}
+
+.indexPage{
+    padding-top: 15px;
+}
+
+.indexMain{
+    text-align: center;
+    list-style: inside;
 }
