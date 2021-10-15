@@ -174,3 +174,77 @@ padding: 2px;
     text-align: center;
     list-style: inside;
 }
+
+
+.buttonLabel{
+ font-size: 30px;
+ grid-area: a;
+}
+
+.button {
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
+    color: chartreuse;
+    background-color: black;
+    grid-area: b;
+}
+
+#polygon{
+    margin-top: 20px;
+    margin-left: -20px;
+    
+ }
+
+#polygonfeildset{
+   border:0px;
+   
+}
+
+button{
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
+    color: chartreuse;
+    background-color: black;
+}
+
+
+  #calcfeildset{
+    border:0px;
+  }
+
+  #calclabel{
+      text-align: left;
+      margin-left: 20px;
+  }
+
+
+
+.calculatorlayout{
+    margin-top: -20px;
+    justify-content: center;
+    max-width: 150px;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 110px);
+    padding-bottom: 20px;
+}
+#calcdisp{
+    margin-left: 20px;
+}
+
+#resultsh2{
+ align-content: center;
+}
+
+#displaySalaryButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#addSalaryButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#arraysMain{
+    text-align: center;
+}
