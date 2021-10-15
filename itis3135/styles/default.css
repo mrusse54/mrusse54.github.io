@@ -248,3 +248,39 @@ button{
 #arraysMain{
     text-align: center;
 }
+
+#projectIntro *{
+    text-align: left;  
+}
+
+#wireFrame *{
+    text-align: left;
+}
+
+#siteMap *{
+    text-align: left;  
+}
+
+#projectFunctionality *{
+    text-align: left;  
+}
+
+.figProject{
+    margin-left: 110px;
+}
+
+#wireframePic{
+margin-left: 55px;
+}
+
+#projectPara{
+    max-width: 500px;
+}
+
+#siteMapHeader{
+    margin-left: 265px;
+}
+
+#wireFrameHeader{
+    margin-left: 250px;
+}
