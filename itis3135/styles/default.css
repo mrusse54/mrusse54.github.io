@@ -284,3 +284,25 @@ margin-left: 55px;
 #wireFrameHeader{
     margin-left: 250px;
 }
+
+#centerStuff{
+    text-align: center;
+}
+
+.thumbnail{
+    display: inline;
+    
+}
+
+.thumbnailImg{
+    width: 150px;
+    height: 150px;
+   margin-left: 3px;
+}
+
+#slideLeft, #SlideRight{
+    padding: 10px;
+    font-size: 15px;
+    width: 4%;
+
+}
