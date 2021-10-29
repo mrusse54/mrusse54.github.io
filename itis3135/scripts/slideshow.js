@@ -1,16 +1,15 @@
 "use strict";
 
-let counter = 0;
 
 $(document).ready(() => {
 
-    $("#image_list a").each((index, link) => {
+    $("#galleryImages a").each((index, images) => {
 
-        const image = new Image();
-        image.src = link.href;
+        const slides = new Image();
+        slides.src = images.href;
     });
 
-    $("#image_list a").click(evt => {
+    $("#galleryImages a").click(evt => {
 
         evt.preventDefault();
 

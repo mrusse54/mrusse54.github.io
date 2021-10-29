@@ -21,7 +21,7 @@ nav
 	text-align: center;
 }
 
-h1, h2, h3
+h1, h2
 {
 	text-align: center;
 	line-height: 0px;
@@ -55,8 +55,7 @@ h2{
 
 ol, li
 {
-    text-align: center;
-    list-style: inside;
+    text-align:left;
 }
 
 table
@@ -97,3 +96,23 @@ tbody tr:nth-child(odd) td
 {
     text-align: right;
 }
+
+#simpleTable{
+    text-align: center;
+}
+
+#complexTable{
+    text-align: center;
+}
+
+#listHeader{
+margin-bottom: -15px;
+}
+
+#complexHeader{
+    margin-bottom: -22px;
+    }
+
+    #simpleHeader{
+        margin-bottom: -1px;
+    }

@@ -27,25 +27,32 @@ function displayResults() {
 
         averageSalary = averageSalary/salaries.length;
 
+        averageSalary= averageSalary.toFixed(2) // rounds it to two decimal places
 
         const h2 = document.createElement("h2");
-        const h2Text = document.createTextNode("The highest and average salaries");
+        const h2Text = document.createTextNode("");
 
         h2.appendChild(h2Text);
 
         const p1 = document.createElement("p");
-        const p1Text = document.createTextNode( "The highest salary is: $" + highestSalary);
+        const p1Text = document.createTextNode("");
 
         p1.appendChild(p1Text);
 
         const p2 = document.createElement("p");
-        const p2Text = document.createTextNode( "The average salary is: $" + averageSalary);
+        const p2Text = document.createTextNode("");
 
         p2.appendChild(p2Text);
+
+        h2.innerHTML = "The highest and average salaries"; // not needed the rubrik says innerHTML to be used but could put text in the createTextNode
+        p1.innerHTML = "The highest salary is: $" + highestSalary;
+        p2.innerHTML = "The average salary is: $" + averageSalary;
 
        document.getElementById("results").appendChild(h2);
        document.getElementById("results").appendChild(p1);
        document.getElementById("results").appendChild(p2);
+
+       document.getElementById("employeeDropdown").focus();
         }
 
 
@@ -84,7 +91,8 @@ function displaySalary() {
     const employeeHeaderText = document.createTextNode(employeeData);
 
     const salaryHeader = document.createElement("th");
-    const salaryHeaderText = document.createTextNode("$"+salaryData);
+    const salaryHeaderText = document.createTextNode();
+    salaryHeaderText.innerHTML = "$"+salaryData;
 
     employeeHeader.appendChild(employeeHeaderText);
     salaryHeader.appendChild(salaryHeaderText);
@@ -93,6 +101,8 @@ function displaySalary() {
     employeeSalaryRow.appendChild(salaryHeader);
 
     }
+
+    document.getElementById("employeeDropdown").focus();
 }
 
 function addSalary() {
@@ -120,8 +130,9 @@ function addSalary() {
     const newEmployeeText = document.createTextNode(employeeName);
     newEmployee.appendChild(newEmployeeText);
 
-
     employeeList.appendChild(newEmployee);
+
+    document.getElementById("employeeDropdown").focus();
 
 }
 

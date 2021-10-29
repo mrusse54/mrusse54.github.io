@@ -8,12 +8,15 @@ const $ = selector => document.queryselector(selector);
      var polygonName = ""; // setting up polygonName
 
        
-    var userPolygon = validateEntry(prompt("MR designs would like you to enter the number of sides of your polygon, 1-10.")); // prompt user and get value make sure it is a number and positive
+    var userPolygon = validateEntry(prompt("Manic Rat team would like you to enter the number of sides of your polygon, 1-10.")); // prompt user and get value make sure it is a number and positive
 
+    Math.floor(userPolygon); // round the number down
 
     while(userPolygon < 1 || userPolygon > 10){ // if number is less than 0 or greater than 10
 
-        userPolygon = validateEntry(prompt("MR designs would like to remind you that the number needs to be, 1-10")); // prompt user if the did bad input
+        userPolygon = validateEntry(prompt("Manic Rat team would like to remind you that the number needs to be, 1-10")); // prompt user if the did bad input
+
+        Math.floor(userPolygon);// round the number down
 
     }
 
@@ -43,9 +46,9 @@ const $ = selector => document.queryselector(selector);
     }
 
     
-    alert('MR designs found that a polygon with ' + userPolygon + ' sides is called a ' + polygonName +"."); //alert the user with their input and polygon
+    alert('Manic Rat found that a polygon with ' + userPolygon + ' sides is called a ' + polygonName +"."); //alert the user with their input and polygon
 
-    document.getElementById("polygonOutput").innerText = 'MR designs found that a polygon with ' + userPolygon + ' sides is called a ' + polygonName +".";  
+    document.getElementById("polygonOutput").innerText = 'Manic Rat team found that a polygon with ' + userPolygon + ' sides is called a ' + polygonName +".";  
 
 }
 

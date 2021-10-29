@@ -7,8 +7,13 @@ const calc = evt => {
 
     const num = buttonPressed.value;
 
-
-    if (document.getElementById("calcdisp").innerText == "0") {
+     if(document.getElementById("calcdisp").innerText == "0" && num == 10){
+        document.getElementById("calcdisp").innerText ="0+";
+    }
+    else if(document.getElementById("calcdisp").innerText == "0" && num == 11){
+        document.getElementById("calcdisp").innerText ="0-";
+    }
+    else if (document.getElementById("calcdisp").innerText == "0") {
         document.getElementById("calcdisp").innerText = num
     }
     else if (num == "10") {

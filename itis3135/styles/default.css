@@ -7,7 +7,7 @@ body
     color:rebeccapurple;
     margin-left: 75px;
 	margin-right: 75px;
-    background-color: chartreuse;
+    background-color: rgb(128, 255, 0);
     font-size: 20px;
 }
 
@@ -170,11 +170,6 @@ padding: 2px;
     padding-top: 15px;
 }
 
-.indexMain{
-    text-align: center;
-    list-style: inside;
-}
-
 
 .buttonLabel{
  font-size: 30px;
@@ -305,4 +300,41 @@ margin-left: 55px;
     font-size: 15px;
     width: 4%;
 
+}
+
+header{
+    background-color: #7B52AE;
+    color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-right: -75px;
+    margin-left: -75px;
+    padding-left: 10px;
+    margin-top: -15px;
+    text-align: center;
+    padding-left: 800px;
+}
+
+
+#hideTextDecor{
+    text-decoration: none; 
+}
+
+#header_logo{
+    text-decoration: none;
+    border: none;
+    width: 70px;
+    margin-bottom: -15px;
+}
+
+.indexList{
+    list-style: none;
+}
+
+.indexListItems{
+   margin-bottom: 5px;
+}
+
+.indexPage{
+    text-align: initial;
 }
