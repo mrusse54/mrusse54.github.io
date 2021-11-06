@@ -1,0 +1,188 @@
+
+body{
+    background-color: #313715;
+    color: #D16014;
+    font-family: sans-serif;
+    margin-left: 75px;
+	margin-right: 75px;
+    font-size: 20px;
+}
+
+footer
+{
+	text-align: center;
+}
+
+.block{
+   
+    display: block;
+}
+
+.p1{
+    display: block;
+    width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.link{
+    
+    text-decoration: none;  
+}
+
+header{
+    background-color: #D16014;
+    color: #D1F58E;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-right: -75px;
+    margin-left: -75px;
+    padding-left: 10px;
+    margin-top: -15px;
+}
+
+
+#hideTextDecor{
+    text-decoration: none; 
+}
+
+#header_logo{
+    text-decoration: none;
+    border: none;
+    width: 70px;
+    margin-bottom: -15px;
+}
+
+.indexList{
+    list-style: none;
+}
+
+.indexListItems{
+   margin-bottom: 5px;
+}
+
+.indexPage{
+    text-align: initial;
+}
+
+footer{
+    background-color: #BBCE8A;
+    margin-right: -75px;
+    margin-left: -75px;
+  margin-top: 150px;
+  box-shadow: 0 50vh 0 50vh #BBCE8A; 
+}
+
+#footerGrid{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-column-gap: 400px;
+    margin-left: 100px;
+}
+
+
+button{
+    color: #D1F58E;
+    border: transparent;
+    background-color:#D16014;
+    font-size: 30px;
+    
+  }
+
+  button:hover
+{
+text-decoration: underline;
+color: #313715;    
+}
+
+#navigational{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 10px;
+    text-align: left;
+    margin-left: 110px;  
+    padding-left: 60px;
+}
+
+#contactInfo{
+    text-align: left;
+}
+
+.contactForm{
+    border-color: #D1F58E;
+}
+
+
+#submit{
+    color: #D1F58E;
+    background-color:#D16014;
+    font-size: 20px;
+    border: solid;
+    border-color: #313715;  
+}
+
+a:hover
+{
+text-decoration: underline;
+color: #313715;    
+}
+
+a{
+    color: #D16014;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mainGrid .subGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#contact{
+    max-width: 400px;
+    border: #D1F58E;
+    border-style:solid;
+   padding: 10px 30px 10px 30px;
+}
+
+#submitButton{
+    margin: 2px;
+}
+
+#slides img{
+    display: none;
+}
+
+#slide{
+    max-width: 300px;
+}
+
+.validateButton{
+    color: #313715;
+    border: solid;
+    background-color:#D16014;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+
+
+.validateButton:hover{
+    color: #D1F58E;
+}
+
+#buttonAlignment{
+   text-align: center;
+}
+
+.bio{
+    margin-left: -100px;
+    margin-top: 30px;
+}

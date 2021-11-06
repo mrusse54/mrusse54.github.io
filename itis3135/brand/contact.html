@@ -1,130 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Palette used https://coolors.co/313715-d16014-939f5c-bbce8a-d1f58e -->
-
-<style>
-
-header{
-    background-color: #D16014;
-    color: #D1F58E;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    line-height: 40%;
-    margin-right: -75px;
-    margin-left: -75px;
-    padding-left: 10px;
-    margin-top: -15px;
-}
-
-body{
-    
-    background-color: #313715
-;
-    color: #D16014;
-    font-family: sans-serif;
-    margin-left: 75px;
-	margin-right: 75px;
-    font-size: 20px;
-   
-}
-
-footer
-{
-	text-align: center;
-}
-
-.block{
-    
-    display: block;
-    width: 300px;
-  padding: 5px;
-}
-
-.p1{
-    display: block;
-    width: 1000px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  
-}
-
-.link{
-    
-    text-decoration: none;  
-}
-
-
-</style>
-
-
-    <meta charset="UTF-8">
-   <title>Mitchell Russell, ITIS3135-051-13709, Mitchell Russell's Brand webpage</title>
+<head>
+  <meta charset="UTF-8">
+  <title>Mitchell Russell, ITIS3135-051-13709, Contact page</title>
+  <link href="styles/default.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="scripts/contactForm.js"></script>
 </head>
 
 <body>
-  <header >
-          <h1>
-              <a class="link" href="images/rat-openclipart-org.png" target=" ">
-            <img src="images/rat-openclipart-org.png" alt="Manic Rat brand logo" style="width:100px; height: 67px;">
-        </a>
-              Manic Rat llc
-          </h1>
+
+  <header>
+    <div data-include="components/header.html"></div>
   </header>
-  
+
+
   <main>
-      <h2> Manic Rat Grooming Services </h2>
-
-     
-      
-    <p class="p1">Manic Rat is an animal grooming service that treats your pets like family. We know that you care about your pets health and wellbeing that is why you are looking at our page right now.
-         For this reason we strive to provide the best services we can to our Customers. </p>
-
-         
-
-         <h3>Reasons to choose our grooming services</h3>
-
-      <ul>
-          <li>Our grooming technitians are pet grooming school certified.</li>
-          <li>We employ stress reducing grooming methods such as grooming slings.</li>
-          <li>Our products used are all natural and gentle on sensitive skin. </li>
-          <li>Customers can bring their own products for their pets medical needs.</li>
-          <li>Customers are welcomed to watch our grooming proccess to insure their pets are being treated properly.</li>
-          <li>We groom non-traditional pets such as hedgehogs, ferrets, and rats.</li>
-          <li>Our grooming services are affordable and we offer discounts to new and recuring customers.</li>
-      </ul>
-    
+    <h2> Manic Rat Grooming Services </h2>
 
 
-      <p class="p1">
-          If given the chance to groom your pets we would supply them with a stress free grooming session. We guarantee your pet will be happy to come back. We would love to see care for your pet in one of our grooming locations.
-      </p>
 
-    
-    <br> 
+    <p class="p1">Here at Manic Rat, we hold our grooming technicians to a higher standard. Our technicians are all
+      Petco-certified groomers with three years or more experience.
+      Our technicians keep up with all the new grooming techniques and products, ensuring your pets are appropriately
+      treated.
+      We supply our groomers with their grooming equipment and supplies to ensure they have all the tools to
+      perform their job. If your pet has special medical needs, our technicians will act accordingly to your pet's
+      needs.
+      Manic Rat wants your pet to have a pleasurable and safe experience.
+    </p>
 
-      <span class="block">
-        Contact information:
-        Email:ManicRat@gmail.com
-        Phone:(919)-687-3592
-        Adress:1234 Fake Adress Blvd, Charlotte, NC 28223
-    </span>
-          
+
+    <h3 id="h3Header">Meet our technitians</h3>
+
+    <div class="mainGrid">
+
+      <div class=subGrid>
+
+        <div>
+          <a><img class="techPic" src="images/tech2.jpg" alt="technicians Matt"> </a>
+        </div>
+
+        <div class="bio">
+          <p>Information:</p>
+          <p>Name: Mitchell Russell.</p>
+          <p>Experince: Petco certified with five year's of grooming experince.</p>
+          <p>Email: mRusse90@ManicRat.com</p>
+          <p>Phone: (919)-234-5573</p>
+          <p>Preferred communications: text</p>
+          <p>Availability: Monday-Friday, 8am-6pm</p>
+          <p>Travels: Yes, will take house calls.</p>
+        </div>
+
+      </div>
+
+      <div class="subGrid">
+
+        <div>
+          <a><img class="techPic" src="images/tech1.jpg" alt="technicians Matt"> </a>
+        </div>
+
+        <div class="bio">
+          <p>Information:</p>
+          <p>Name: Matt Russell.</p>
+          <p>Experince: Petco certified with twelve year's of grooming experince.</p>
+          <p>Email: mRusse80@ManicRat.com</p>
+          <p>Phone: (919)-245-2323</p>
+          <p>Preferred communications:Phone call</p>
+          <p>Availability: Monday-Friday, 8am-6pm</p>
+          <p>Travels: No, will not take house calls.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <br>
+
+    <h3>How to get in contact with us</h3>
+
+    <p>
+      Please fill out this form and we will be in contact with you within one business day.
+    </p>
+
+
+    <form action="#" id="contact">
+      <h4>Contact Form</h4>
+      <fieldset class="contactForm">
+        <legend>Enter your contact information.</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="First-name Last-name" size="20" aria-invalid="true">
+        </div>
+        <div>
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" placeholder="123-456-7890" size="13" aria-invalid="true" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="abc@email.com" size="17" aria-invalid="true"
+            required>
+        </div>
+        <div>
+          <label>contact options</label>
+          <input type="radio" id="call" name="options" checked value="Phone call" aria-invalid="true" required> call
+          <input type="radio" id="text" name="options" value="text" aria-invalid="true" required> text
+          <input type="radio" id="email1" name="options" value="email" aria-invalid="true" required> email
+        </div>
+      </fieldset>
+
+      <fieldset class="contactForm">
+        <legend>Submit contact information</legend>
+        <div>
+          <button type="submit" id="submit"> Submit</button>
+        </div>
+      </fieldset>
+    </form>
 
   </main>
 
   <footer>
-  <br> 
-
-      <p>Designed by: Manic Rat llc ©</p>
-      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmrusse54%2Fitis3135%2Fbrand_manic_rat.html" target="_blank">
-          <img src="images/button-valid-html5.gif" width="70" height="31" alt="Link to HTML validator">
-      </a>
-
-      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmrusse54%2Fitis3135%2Fbrand_manic_rat.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
-          <img src="images/button-valid-css.gif" width="70" height="31" alt="Link to CSS validator">
-      </a>
+    <div data-include="components/footer.html"></div>
   </footer>
+
+
+  <script src="scripts/include.js"></script>
 
 </body>
 
