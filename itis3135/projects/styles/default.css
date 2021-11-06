@@ -225,10 +225,10 @@ margin-top: 130px;
 }
 
 .productImg{
-    width: 590px;
-    height: 393px;
+    width: 400px;
 }
 
 .productInfo{
     margin-top: 50px;
+    margin-left: -180px;
 }
