@@ -91,8 +91,8 @@ function displaySalary() {
     const employeeHeaderText = document.createTextNode(employeeData);
 
     const salaryHeader = document.createElement("th");
-    const salaryHeaderText = document.createTextNode();
-    salaryHeaderText.innerHTML = "$"+salaryData;
+    const salaryHeaderText = document.createTextNode("");
+    salaryHeaderText.textContent = "$"+salaryData;
 
     employeeHeader.appendChild(employeeHeaderText);
     salaryHeader.appendChild(salaryHeaderText);
