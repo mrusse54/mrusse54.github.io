@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function() {
     $("#accordion").accordion({
     event: "click",
