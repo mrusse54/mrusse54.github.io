@@ -21,9 +21,9 @@ $(document).ready(function () {
                         "<p>" + value.genre + "</p>" +
                         "<p>" + value.cost + "</p>");
                     const aTag = document.createElement("a"); // could not figure out how to get code to work like activity 16 so simple solution
-                    aTag.href = value.link;
-                    aTag.innerText = "Where to buy: Amazon";
-                    $("#productInfoOne").append(aTag);
+                    aTag.href = value.link; // gets link from json file
+                    aTag.innerText = "Where to buy: Amazon"; // a tag text
+                    $("#productInfoOne").append(aTag); // appends a tag to div
                 });
 
 
@@ -89,9 +89,9 @@ $(document).ready(function () {
                             "<p>" + value.cost + "</p>" +
                             "<p>" + value.total + "</p>" );
                             const aTag = document.createElement("a"); // could not figure out how to get code to work like activity 16 so simple solution
-                            aTag.href = value.recipe; 
-                            aTag.innerText = "Recipe: Link";
-                            $("#productInfoThree").append(aTag);
+                            aTag.href = value.recipe; // gets link from json file
+                            aTag.innerText = "Recipe: Link";// a tag text
+                            $("#productInfoThree").append(aTag);// appends a tag to div
                 });
 
 

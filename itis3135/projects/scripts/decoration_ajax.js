@@ -21,9 +21,9 @@ $(document).ready(function () {
                         "<p>" + value.brand + "</p>" +
                         "<p>" + value.cost + "</p>");
                     const aTag = document.createElement("a"); // could not figure out how to get code to work like activity 16 so simple solution
-                    aTag.href = value.link;
-                    aTag.innerText = "Where to buy: Amazon";
-                    $("#productInfoOne").append(aTag);
+                    aTag.href = value.link; // gets link from json file
+                    aTag.innerText = "Where to buy: Amazon"; // a tag texts
+                    $("#productInfoOne").append(aTag);// appends a tag to div
                 });
 
 

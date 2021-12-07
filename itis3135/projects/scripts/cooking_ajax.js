@@ -21,9 +21,9 @@ $(document).ready(function () {
                             "<p>" + value.cost + "</p>" +
                             "<p>" + value.total + "</p>" );
                             const aTag = document.createElement("a"); // could not figure out how to get code to work like activity 16 so simple solution
-                            aTag.href = value.recipe; 
-                            aTag.innerText = "Recipe: Link";
-                            $("#productInfoOne").append(aTag);
+                            aTag.href = value.recipe; // a tag texts
+                            aTag.innerText = "Recipe: Link"; // gest link from json file
+                            $("#productInfoOne").append(aTag); // appends a tag to div
                 });
 
 
