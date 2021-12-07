@@ -1,0 +1,11 @@
+
+{"food":[
+	{
+		"category": "Category: Main dish.",
+            "name": "Name: Bacon wrapped Meatloaf.",
+            "preptime": "preptime:20 minutes.",
+            "total": "Total cook time: 1 hour and 25 minutes.",
+            "cost": "Cost: 15$.",
+            "recipe": "https://www.thepioneerwoman.com/food-cooking/recipes/a32405937/bacon-wrapped-meatloaf-recipe/"
+	}
+]}

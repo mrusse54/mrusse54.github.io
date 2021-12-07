@@ -1,0 +1,9 @@
+
+{"foodSlides":[
+	{
+		"pumpkin": "images/pie.JPG",
+            "drink": "images/drank.JPG",
+            "meatloaf": "images/meatloaf.JPEG",
+            "squash": "images/squash.JPEG"
+	}
+]}

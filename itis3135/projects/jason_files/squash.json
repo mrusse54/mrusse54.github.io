@@ -1,0 +1,11 @@
+
+{"food":[
+	{
+		"category": "Category: Side dish.",
+            "name": "Name: Squash Casserole.",
+            "preptime": "preptime: 25 minutes.",
+            "total": "Total cook time: 1 hour and 5 minutes.",
+            "cost": "Cost: 7$.",
+            "recipe": "https://www.southernliving.com/recipes/old-school-squash-casserole-recipe"
+	}
+]}

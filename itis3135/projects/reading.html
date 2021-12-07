@@ -3,10 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Mitchell Russell, ITIS3135-051-13709, reading page</title>
+  <title>Mitchell Russell, ITIS3135-051-13709, wearing page</title>
   <link href="styles/default.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  <script src="scripts/slideshow.js"></script>
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="scripts/accordian.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+  <script src="scripts/bxslider.js"></script>
+  <script src="scripts/popup.js"></script>
+  <script src="scripts/reading_ajax.js"></script>
+  <script src="scripts/reading_slides.js"></script>
 </head>
 
 <body>
@@ -19,21 +29,18 @@
     <h2 id="pageHeader"> Welcome to my bookclub </h2>
 
     <div class="alignCenter">
-      <div id="slideShowGroup">
-        <input type="button" class="slideButton" name="slideLeft" id="slideLeft" value="Previous">
 
-        <div class="centerSlides">
-          <img id="slide" src="images/sharp.jpg" alt="Sharp Objects">
-          <div id="slides">
-            <img src="images/guest.jpg" alt="The Guest List">
-            <img src="images/last.jpg" alt="The Last House Guest">
-            <img src="images/window.jpg" alt="The Woman in the Window">
-            <img src="images/sharp.jpg" alt="Sharp Objects">
-          </div>
-        </div>
-        <input type="button" class="slideButton" name="SlideRight" id="slideRight" value="  Next  ">
-      </div>
+      <ul id="slider">
+        <li> <a href="images/guest.jpg" class="popup-link"><img src="images/guest.jpg" alt="The Guest List"></a></li>
+        <li> <a href="images/last.jpg" class="popup-link"><img src="images/last.jpg" alt="The Last House Guest"></a></li>
+        <li> <a href="images/window.jpg" class="popup-link"><img src="images/window.jpg" alt="The Woman in the Window"></a></li>
+        <li> <a href="images/sharp.jpg" class="popup-link"><img src="images/sharp.jpg" alt="Sharp Objects"></a></li>
+      </ul>
+      <p id="id_pager"></p>
+
     </div>
+
+
     <p class="centerPara">Welcome to my bookclub. These are books my books of the month.</p>
 
 
@@ -45,79 +52,56 @@
       <div class=subGrid>
 
         <div>
-          <a><img class="productImg" src="images/guest.jpg" alt="The Guest List"> </a>
+        <a id="productImgOne" href="images/guest.jpg" class="popup-link"></a>
         </div>
 
-        <div class="productInfo">
-          <p>Version: Kindle.</p>
-          <p>Book name: The Guest List.</p>
-          <p>Author: Lucy Foley. </p>
-          <p>Genre: Mystery. </p>
-          <p>Cost: 11.99$. </p>
-          <p>Where to buy: <a
-              href="https://www.amazon.com/Guest-List-Novel-Lucy-Foley/dp/0062868934/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=">Amazon</a>
-          </p>
-        </div>
 
+        <div id="accordionOne">
+          <h3>Lucy Foley: The Guest List</h3>
+          <div id="productInfoOne">
+          </div>
+        </div>
       </div>
 
 
       <div class=subGrid>
 
         <div>
-          <a><img class="productImg" src="images/last.jpg" alt="The Last House Guest"> </a>
+          <a id="productImgTwo" href="images/last.jpg" class="popup-link"></a>
         </div>
 
-        <div class="productInfo">
-          <p>Version: Kindle.</p>
-          <p>Book name: The Last House Guest.</p>
-          <p>Author: Megan Miranda. </p>
-          <p>Genre: Thriller. </p>
-          <p>Cost: 12.99$. </p>
-          <p>Where to buy: <a
-              href="https://www.amazon.com/Last-House-Guest-Megan-Miranda/dp/1501165372/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1636073298&sr=1-1">Amazon</a>
-          </p>
+        <div id="accordionTwo">
+          <h3>Megan Miranda: The Last House Guest</h3>
+          <div id="productInfoTwo">
+          </div>
         </div>
-
 
       </div>
 
       <div class=subGrid>
 
         <div>
-          <a><img class="productImg" src="images/window.jpg" alt="The Woman in the Window"></a>
+          <a id="productImgThree" href="images/window.jpg" class="popup-link"></a>
         </div>
 
-        <div class="productInfo">
-          <p>Version: Kindle.</p>
-          <p>Book name: The Woman in the Window.</p>
-          <p>Author: A.J Finn. </p>
-          <p>Genre: Mystery. </p>
-          <p>Cost: 10.99$. </p>
-          <p>Where to buy: <a
-              href="https://www.amazon.com/Woman-Window-Novel-J-Finn/dp/0062678418/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1636073092&sr=1-1">Amazon</a>
-          </p>
+        <div id="accordionThree">
+          <h3>A.J Finn: The Woman in the Window</h3>
+          <div id="productInfoThree">
+          </div>
         </div>
-
       </div>
 
       <div class="subGrid">
 
         <div>
-          <a> <img class="productImg" src="images/sharp.jpg" alt="Sharp Objects"></a>
+          <a id="productImgFour" href="images/sharp.jpg" class="popup-link"></a>
         </div>
 
-        <div class="productInfo">
-          <p>Version: Kindle.</p>
-          <p>Book name: Sharp Objects.</p>
-          <p>Author: Gillian Flynn. </p>
-          <p>Genre: Mystery. </p>
-          <p>Cost: 11.99$. </p>
-          <p>Where to buy: <a
-              href="https://www.amazon.com/Sharp-Objects-Movie-Tie-Novel/dp/0525575758/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1636073350&sr=1-1">Amazon</a>
-          </p>
+        <div id="accordionFour">
+          <h3>Gillian Flynn: Sharp Objects</h3>
+          <div id="productInfoFour">
+          </div>
         </div>
-
       </div>
 
     </div>

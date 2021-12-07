@@ -1,0 +1,11 @@
+
+{"food":[
+	{
+		"category": "Category: Alcoholic drink.",
+            "name": "Name: Pain Killer.",
+            "preptime": "preptime: 5 minutes.",
+            "total": "Total cook time: None.",
+            "cost": "Cost: less than 3$.",
+            "recipe": "https://realhousemoms.com/painkiller-recipe/"
+	}
+]}

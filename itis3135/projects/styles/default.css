@@ -187,6 +187,7 @@ header button{
 
 #pageHeader{
 text-align: center;
+margin-left: -120px;
 }
 
 .centerSlides{
@@ -195,7 +196,7 @@ text-align: center;
 
 .centerPara{
     text-align: center;
-    margin-left: auto;
+   margin-left: 850px;
     margin-right: auto;
     max-width: 600px;
    
@@ -228,7 +229,46 @@ margin-top: 130px;
     width: 400px;
 }
 
-.productInfo{
-    margin-top: 50px;
-    margin-left: -180px;
+
+
+#id_pager{
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
+#slider{
+  margin: auto;
+ 
+}
+
+
+#accordionTwo{
+    margin-left: -190px;
+    max-width: 550px;
+
+}
+
+#accordionOne{
+    margin-left: -190px;
+    max-width: 550px;
+    
+}
+
+
+#accordionThree{
+    margin-left: -190px;
+    max-width: 550px;
+
+}
+
+
+#accordionFour{
+    margin-left: -190px;
+    max-width: 550px;
+
+}
+
+
+.popup-link{
+width: 500px;
 }

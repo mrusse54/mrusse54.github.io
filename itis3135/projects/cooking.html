@@ -1,128 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
 
-  <!DOCTYPE html>
-  <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8">
-    <title>Mitchell Russell, ITIS3135-051-13709, cooking page</title>
-    <link href="styles/default.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="scripts/slideshow.js"></script>
-  </head>
-  
-  <body>
-  
-    <header>
-      <div data-include="components/header.html"></div>
-    </header>
-  
-    <main>
-      <h2 id="pageHeader"> Welcome to my kitchen </h2>
-  
-      <div class="alignCenter">
-      <div id="slideShowGroup">
-        <input type="button" class="slideButton" name="slideLeft" id="slideLeft" value="Previous">
-  
-        <div class="centerSlides">
-          <img id="slide" src="images/squash.JPEG" alt="squash casserole">
-          <div id="slides">
-            <img src="images/pie.JPG" alt="pumpkin pie">
-            <img src="images/drank.JPG" alt="rum cocktail">
-            <img src="images/meatloaf.JPEG" alt="meatloaf">
-            <img src="images/squash.JPEG" alt="squash casserole">
+<head>
+   <meta charset="UTF-8">
+  <title>Mitchell Russell, ITIS3135-051-13709, wearing page</title>
+  <link href="styles/default.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="scripts/accordian.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+  <script src="scripts/bxslider.js"></script>
+  <script src="scripts/popup.js"></script>
+  <script src="scripts/cooking_ajax.js"></script>
+  <script src="scripts/cooking_slides.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2 id="pageHeader"> Welcome to my kitchen </h2>
+
+    <div class="alignCenter">
+
+      <ul id="slider">
+        <li> <a href="images/pie.JPG" class="popup-link"><img src="images/pie.JPG" alt="pumpkin pie"></a></li>
+        <li> <a href="images/drank.JPG" class="popup-link"><img src="images/drank.JPG" alt="rum cocktail"></a></li>
+        <li> <a href="images/meatloaf.JPEG" class="popup-link"><img src="images/meatloaf.JPEG" alt="meatloaf"></a></li>
+        <li> <a href="images/squash.JPEG" class="popup-link"><img src="images/squash.JPEG" alt="squash casserole"></a></li>
+      </ul>
+      <p id="id_pager"></p>
+    </div>
+
+    <p class="centerPara">These are my recipes of the month. My family enjoyed these recipes the most.</p>
+
+
+    <hr>
+    <br>
+
+    <div class="mainGrid">
+
+      <div class=subGrid>
+
+        <div>
+          <a id="productImgOne" href="images/pie.JPG" class="popup-link"></a>
+        </div>
+
+        <div id="accordionOne">
+          <h3>Dessert: Pumpkin pie</h3>
+          <div id="productInfoOne">
+           
           </div>
         </div>
-        <input type="button" class="slideButton" name="SlideRight" id="slideRight" value="  Next  ">
       </div>
+
+
+      <div class=subGrid>
+
+        <div>
+          <a id="productImgTwo" href="images/drank.JPG" class="popup-link"></a>
         </div>
-        <p class="centerPara">These are my recipes of the month. My family enjoyed these recipes the most.</p>
-      
-  
-      <hr>
-      <br>
-  
-      <div class="mainGrid">
-  
-        <div class=subGrid>
-  
-          <div>
-            <a><img class="productImg" src="images/pie.JPG" alt="pumpkin pie"> </a>
+
+        <div id="accordionTwo">
+          <h3>Alcoholic drink: Pain Killer</h3>
+          <div id="productInfoTwo">
+
           </div>
-  
-          <div class="productInfo">
-            <p>Category: Dessert.</p>
-            <p>Name: Pumpkin pie.</p>
-            <p>preptime: 15 minutes.</p>
-            <p>Total cook time: 1 hour. </p>
-            <p>Cost: less than 10$. </p>
-            <p>Recipe: <a href="https://www.allrecipes.com/recipe/23439/perfect-pumpkin-pie/">Link</a> </p>
-          </div>
-  
         </div>
-  
-  
-        <div class=subGrid>
-  
-          <div>
-            <a><img class="productImg" src="images/drank.JPG" alt="rum cocktail"> </a>
-          </div>
-  
-          <div class="productInfo">
-            <p>Category: Alcoholic drink.</p>
-            <p>Name: Pain Killer.</p>
-            <p>preptime:5 minutes.</p>
-            <p>Total cook time: None. </p>
-            <p>Cost: less than 3$. </p>
-            <p>Recipe: <a href="https://realhousemoms.com/painkiller-recipe/">Link</a> </p>
-          </div>
-  
-        </div>
-  
-        <div class=subGrid>
-  
-          <div>
-            <a><img class="productImg" src="images/meatloaf.JPEG" alt="meatloaf"> </a>
-          </div>
-  
-          <div class="productInfo">
-            <p>Category: Main dish.</p>
-            <p>Name: Bacon wrapped Meatloaf.</p>
-            <p>preptime:20 minutes.</p>
-            <p>Total cook time: 1 hour and 25 minutes. </p>
-            <p>Cost: 15$. </p>
-            <p>Recipe: <a href="https://www.thepioneerwoman.com/food-cooking/recipes/a32405937/bacon-wrapped-meatloaf-recipe/">Link</a> </p>
-          </div>
-  
-        </div>
-  
-        <div class="subGrid">
-  
-          <div>
-            <a><img class="productImg" src="images/squash.JPEG" alt="squash casserole"></a>
-          </div>
-  
-          <div class="productInfo">
-            <p>Category: Side dish.</p>
-            <p>Name: Squash Casserole.</p>
-            <p>preptime:25 minutes.</p>
-            <p>Total cook time: 1 hour and 5 minutes. </p>
-            <p>Cost: 7$. </p>
-            <p>Recipe: <a href="https://www.southernliving.com/recipes/old-school-squash-casserole-recipe">Link</a> </p>
-          </div>
-  
-        </div>
-  
       </div>
-  
-    </main>
-  
-    <footer>
-      <div data-include="components/footer.html"></div>
-    </footer>
-  
-  
-    <script src="scripts/include.js"></script>
-  
-  </body>
-  
-  </html>
+
+      <div class=subGrid>
+
+        <div>
+          <a  id="productImgThree" href="images/meatloaf.JPEG" class="popup-link"></a>
+        </div>
+
+        <div id="accordionThree">
+          <h3>Main dish: Bacon wrapped Meatloaf</h3>
+          <div id="productInfoThree">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="subGrid">
+
+        <div>
+          <a id="productImgFour" href="images/squash.JPEG" class="popup-link"></a>
+        </div>
+
+        <div id="accordionFour">
+          <h3>Side dish: Squash Casserole</h3>
+          <div id="productInfoFour">
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+
+  <script src="scripts/include.js"></script>
+
+</body>
+
+</html>

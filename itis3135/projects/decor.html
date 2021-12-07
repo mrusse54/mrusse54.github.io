@@ -3,10 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Mitchell Russell, ITIS3135-051-13709, decor page</title>
+  <title>Mitchell Russell, ITIS3135-051-13709, wearing page</title>
   <link href="styles/default.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  <script src="scripts/slideshow.js"></script>
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="scripts/accordian.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+  <script src="scripts/bxslider.js"></script>
+  <script src="scripts/popup.js"></script>
+  <script src="scripts/decoration_ajax.js"></script>
+  <script src="scripts/decoration_slides.js"></script>
 </head>
 
 <body>
@@ -19,21 +29,19 @@
     <h2 id="pageHeader"> Welcome to my home</h2>
 
     <div class="alignCenter">
-      <div id="slideShowGroup">
-        <input type="button" class="slideButton" name="slideLeft" id="slideLeft" value="Previous">
 
-        <div class="centerSlides">
-          <img id="slide" src="images/pumpkin.JPEG" alt="towel holder">
-          <div id="slides">
-            <img src="images/vase.JPEG" alt="vase">
-            <img src="images/holder.jpg" alt="pumpkin">
-            <img src="images/teapot.JPEG" alt="teapot">
-            <img src="images/pumpkin.JPEG" alt="pumpkin">
-          </div>
-        </div>
-        <input type="button" class="slideButton" name="SlideRight" id="slideRight" value="  Next  ">
-      </div>
+      <ul id="slider">
+        <li> <a href="images/vase.JPEG" class="popup-link"><img src="images/vase.JPEG" alt="vase"></a></li>
+        <li> <a href="images/pumpkin.JPEG" class="popup-link"><img src="images/pumpkin.JPEG" alt="pumpkinsl"></a></li>
+        <li> <a href="images/teapot.JPEG" class="popup-link"><img src="images/teapot.JPEG" alt="teapot"></a></li>
+        <li> <a href="images/holder.jpg" class="popup-link"><img src="images/holder.jpg" alt="towel holder"></a>
+        </li>
+      </ul>
+      <p id="id_pager"></p>
     </div>
+
+
+
     <p class="centerPara">Welcome to my home, these are some of my favorite peices for the fall season.</p>
 
 
@@ -45,82 +53,61 @@
       <div class=subGrid>
 
         <div>
-          <a><img class="productImg" src="images/vase.JPEG" alt="vase"> </a>
+          <a id="productImgOne" href="images/vase.JPEG" class="popup-link"></a>
         </div>
 
-        <div class="productInfo">
-          <p>Product: Centerpeice.</p>
-          <p>type: Vase. </p>
-          <p>Product name: Dahlia, Blue and white porcelain vase with flower motif. </p>
-          <p>Brand: Dahlia. </p>
-          <p>Cost: 50$.</p>
-          <p>Where to buy: <a
-              href="https://smile.amazon.com/dp/B06XT5S147/ref=cm_sw_r_sms_api_glt_fabc_BZ94N2C4309GG24DH8K2">Amazon</a>
-          </p>
+        <div id="accordionOne">
+          <h3>Dahlia: Blue and white porcelain vase with flower motif</h3>
+          <div id="productInfoOne">
+           
+          </div>
         </div>
-
       </div>
 
 
       <div class=subGrid>
 
         <div>
-          <a><img class="productImg" src="images/pumpkin.JPEG" alt="pumpkins"> </a>
+          <a id="productImgTwo" href="images/pumpkin.JPEG" class="popup-link"></a>
         </div>
 
-        <div class="productInfo">
-          <p>Product: Fall Decor.</p>
-          <p>type: Table decoration. </p>
-          <p>Product name: Halloween Artificial Pumpkins. </p>
-          <p>Brand: DomeStar. </p>
-          <p>Cost: 13$.</p>
-          <p>Where to buy: <a
-              href="https://smile.amazon.com/dp/B0925XNBB8/ref=cm_sw_r_sms_api_glt_fabc_BH3NQWPB7XAV4S96DQY6?_encoding=UTF8&psc=1">Amazon</a>
-          </p>
+        <div id="accordionTwo">
+          <h3>Table decoration: Halloween Artificial Pumpkins</h3>
+          <div id="productInfoTwo">
+          </div>
         </div>
-
 
       </div>
 
       <div class=subGrid>
 
         <div>
-          <a><img class="productImg" src="images/teapot.JPEG" alt="teapot"></a>
+          <a id="productImgThree" href="images/teapot.JPEG" class="popup-link"></a>
         </div>
 
-        <div class="productInfo">
-          <p>Product: Kitchen.</p>
-          <p>type: Kettle. </p>
-          <p>Product name: Royal Check 3-Quart Tea Kettle. </p>
-          <p>Brand: Mackenzie-Childs. </p>
-          <p>Cost: 168$.</p>
-          <p>Where to buy: <a
-              href="https://www.bloomingdales.com/shop/product/mackenzie-childs-royal-check-3-quart-tea-kettle?ID=3863056&cm_mmc=SMS-_-MAPP_pdpshare-_-n-_-n">bloomingdales</a>
-          </p>
+        <div id="accordionThree">
+          <h3>Kettle: Royal Check 3-Quart Tea Kettle</h3>
+          <div id="productInfoThree">
+          </div>
         </div>
-
       </div>
 
       <div class="subGrid">
 
         <div>
-          <a> <img class="productImg" src="images/holder.jpg" alt="towel holder"></a>
+          <a id="productImgFour" href="images/holder.jpg" class="popup-link"></a>
         </div>
 
-        <div class="productInfo">
-          <p>Product: Kitchen.</p>
-          <p>type: Paper towel holder. </p>
-          <p>Product name: Royal Check Paper Towel Holder. </p>
-          <p>Brand: Mackenzie-Childs. </p>
-          <p>Cost: 105$.</p>
-          <p>Where to buy: <a
-              href="https://www.bloomingdales.com/shop/product/mackenzie-childs-royal-check-paper-towel-holder?ID=3863053&cm_mmc=SMS-_-MAPP_pdpshare-_-n-_-n">bloomingdales</a>
-          </p>
+        <div id="accordionFour">
+          <h3>Paper towel holder: Royal Check Paper Towel Holder</h3>
+          <div id="productInfoFour">
+          </div>
+
         </div>
 
       </div>
 
-    </div>
+      </div>
 
   </main>
 
